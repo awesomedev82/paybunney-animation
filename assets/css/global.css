@@ -187,6 +187,10 @@ p{
 .animation-layout {
   height: 1400px;
 }
+
+.header-layout {
+  justify-content: space-between;
+}
 @media (max-width: 1200px) {
   .main-header {
     width: calc(100vw - 50px);
@@ -252,5 +256,11 @@ p{
   }
   .animation-layout {
     height: 1100px;
+  }
+  .header-buttons {
+    display: none;
+  }
+  .header-layout{
+    justify-content: center;
   }
 }
