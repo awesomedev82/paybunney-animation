@@ -11,6 +11,7 @@
   top: 531px;
   transform: perspective(1200px);
   z-index: 2;
+  transition: all 0.5s ease-in-out;
 }
 .framer-GNqAy .framer-1o6yxmp {
   aspect-ratio: 0.5076347771891555 / 1;
@@ -46,7 +47,7 @@ body {
 }
 
 .justify-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-center {
@@ -54,7 +55,7 @@ body {
 }
 
 .justify-end {
-    justify-content: end;
+  justify-content: end;
 }
 
 .align-center {
@@ -108,49 +109,49 @@ body {
 }
 
 .sub-header {
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    width: 806px;
-    margin: 0px auto;
-    margin-top: 76px;
-    margin-bottom: 64px;
-    letter-spacing: -0.3px;
-    line-height: 43.71px;
-  }
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  width: 806px;
+  margin: 0px auto;
+  margin-top: 76px;
+  margin-bottom: 64px;
+  letter-spacing: -0.3px;
+  line-height: 43.71px;
+}
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .step {
-    position: absolute;
-    left: -20px;
-    transition: all 0.2s ease-in-out;
+  position: absolute;
+  left: -20px;
+  transition: all 0.2s ease-in-out;
 }
 
-.step:hover { 
-    scale: 1.1;
+.step:hover {
+  scale: 1.1;
 }
 
 .create-account {
-    top: 27px;
+  top: 27px;
 }
 
 .link-financial {
-    bottom: 27px;
+  bottom: 27px;
 }
 
 .create-card {
-    top: 27px;
+  top: 27px;
 }
 
-p{
-    margin: 0px;
+p {
+  margin: 0px;
 }
 
 .image {
@@ -191,6 +192,19 @@ p{
 .header-layout {
   justify-content: space-between;
 }
+
+.framer-h73xm4 {
+  flex: none;
+  height: 2131px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.step-container {
+  width: 400px;
+}
+
 @media (max-width: 1200px) {
   .main-header {
     width: calc(100vw - 50px);
@@ -199,7 +213,7 @@ p{
   .layout {
     padding: 20px;
   }
-  .sub-header{
+  .sub-header {
     font-size: 25px;
     width: calc(100vw - 50px);
   }
@@ -208,10 +222,10 @@ p{
     gap: 24px;
     align-items: center;
   }
-  .card-image{
+  .card-image {
     display: none;
   }
-  .card-header{
+  .card-header {
     font-size: 32px;
     text-align: center;
     width: auto;
@@ -220,7 +234,7 @@ p{
     justify-content: center;
     padding: 40px;
   }
-  .card-sub-layout{
+  .card-sub-layout {
     align-items: center;
     gap: 10px;
   }
@@ -235,13 +249,14 @@ p{
     font-size: 24px;
   }
   .layout {
-    padding: 20px;
+    padding: 12px;
   }
-  .sub-header{
+  .sub-header {
     font-size: 24px;
     width: calc(100vw - 50px);
+    margin-top: 0px;
   }
-  .card-header{
+  .card-header {
     font-size: 24px;
   }
   .button-layout {
@@ -257,10 +272,41 @@ p{
   .animation-layout {
     height: 1100px;
   }
-  .header-buttons {
-    display: none;
+  .framer-h73xm4 {
+    height: 2973px;
+    order: 3;
   }
-  .header-layout{
+  .header-layout {
     justify-content: center;
   }
+  .button-layout {
+    display: none;
+  }
+  .step-container {
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .step {
+    left: -15px;
+  }
+  .create-account {
+    width: 90vw;
+    top: 27px;
+  }
+  
+  .link-financial {
+    width: 90vw;
+    bottom: 27px;
+  }
+  
+  .create-card {
+    width: 90vw;
+    top: 27px;
+  }
+
+  .main-header{
+    margin-top: 0px;
+  }
+  
 }
